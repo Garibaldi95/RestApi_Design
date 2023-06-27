@@ -45,6 +45,7 @@ services:
     volumes:
       - applicationMysqlData:/var/lib/mysql
       - applicationMysqlFiles:/var/lib/mysql-files
+      - ./mysql-dump:/docker-entrypoint-initdb.d
 
 #Docker Volumes
 volumes:
